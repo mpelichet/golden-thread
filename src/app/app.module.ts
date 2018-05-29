@@ -6,11 +6,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
-
+import { LoginPage } from '../pages/login/login';
+/**?if you type in ng module first, visual studio generates the import
+ * statement for you 
+ */
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage, 
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -19,7 +23,8 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage, 
+    LoginPage
   ],
   providers: [
     StatusBar,
@@ -27,4 +32,6 @@ import { HomePage } from '../pages/home/home';
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
+
+/**So this page links the app to the page, */
 export class AppModule {}
