@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
+import { RegisterPage } from '../registration/registration';
+import { ProfilePage } from '../profile/profile';
+
 
 /**?TypeScript Feature add meta data to typescript code*/
 @Component({
@@ -16,6 +19,16 @@ export class HomePage {
   navigateToLogin(){
       /**pushes a new page into stack*/
       this.navCtrl.push(LoginPage);
+  }
+
+  navigateToRegister(){
+    /**pushes a new page into stack*/
+    this.navCtrl.push(RegisterPage);
+  }
+
+  navigateToProfile(){
+    /**pushes a new page into stack*/
+    this.navCtrl.push(ProfilePage);
   }
 
 }

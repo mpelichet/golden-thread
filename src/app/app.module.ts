@@ -7,6 +7,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
+import { RegisterPage } from '../pages/registration/registration';
+import { ProfilePage } from '../pages/profile/profile';
 /**?if you type in ng module first, visual studio generates the import
  * statement for you 
  */
@@ -14,7 +16,9 @@ import { LoginPage } from '../pages/login/login';
   declarations: [
     MyApp,
     HomePage, 
-    LoginPage
+    LoginPage, 
+    RegisterPage,
+    ProfilePage 
   ],
   imports: [
     BrowserModule,
@@ -24,7 +28,9 @@ import { LoginPage } from '../pages/login/login';
   entryComponents: [
     MyApp,
     HomePage, 
-    LoginPage
+    LoginPage,
+    RegisterPage, 
+    ProfilePage
   ],
   providers: [
     StatusBar,
