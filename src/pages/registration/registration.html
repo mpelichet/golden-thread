@@ -1,14 +1,29 @@
 <ion-header>
-        <ion-navbar>
-            <ion-title>
-                Registration Page
-            </ion-title>
-        </ion-navbar>
-    </ion-header>
-    
-    <ion-content padding>
-        <p>
-            Welcome to Registration Page
-        </p>
-        <button ion-button (click)="navigateToProfile()">Go To Your Profile</button>
-    </ion-content>
+    <ion-navbar>
+        <ion-title>
+            Registration Page
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-list>
+        <ion-item>
+            <ion-label stacked>Username</ion-label>
+            <ion-input [(ngModel)]="username"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label stacked>Password</ion-label>
+            <ion-input [(ngModel)]="password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label stacked>Confirm Password</ion-label>
+            <ion-input [(ngModel)]="passwordverify"></ion-input>
+        </ion-item>
+
+    </ion-list>
+    <button ion-button (click)="register()"> Go To Your Profile</button>
+</ion-content>

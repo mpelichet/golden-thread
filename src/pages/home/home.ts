@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 import { RegisterPage } from '../registration/registration';
-import { ProfilePage } from '../profile/profile';
 
 
 /**?TypeScript Feature add meta data to typescript code*/
@@ -12,7 +11,7 @@ import { ProfilePage } from '../profile/profile';
 })
 export class HomePage {
     /**How we can inject pieces of reusable code into  */
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
 
   }
 
@@ -24,11 +23,6 @@ export class HomePage {
   navigateToRegister(){
     /**pushes a new page into stack*/
     this.navCtrl.push(RegisterPage);
-  }
-
-  navigateToProfile(){
-    /**pushes a new page into stack*/
-    this.navCtrl.push(ProfilePage);
   }
 
 }

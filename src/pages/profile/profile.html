@@ -1,14 +1,14 @@
 <ion-header>
     <ion-navbar>
-        <ion-title>
-            Profile Page
-        </ion-title>
+        <ion-title>Profile Page</ion-title>
     </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-    <p>
-        Welcome to Profile Page
-    </p>
-    <button ion-button (click)="popToRoot()">Exit</button>
+    <p stacked> Username: {{username}} </p>
+    <p stacked> Password: {{password}} </p>
+    <!-- <p stacked> Password Verification: {{passwordverify}}</p>
+     -->
+    <button ion-button (click)="viewCharities()"> View Charities</button>
+    <button ion-button (click)="popToRoot()"> Exit </button>
 </ion-content>

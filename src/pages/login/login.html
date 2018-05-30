@@ -7,8 +7,18 @@
 </ion-header>
 
 <ion-content padding>
-    <p>
-        Welcome to Login Page
-    </p>
-    <button ion-button (click)="navigateToProfile()">Enter</button>
+    <ion-list>
+
+        <ion-item>
+          <ion-label stacked >Username </ion-label>
+          <ion-input type="text" [(ngModel)]="username"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+          <ion-label stacked>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+
+    </ion-list>
+    <button ion-button (click)="login()">Enter</button>
 </ion-content>

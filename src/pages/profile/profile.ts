@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { CharityPage } from '../charity/charity';
+import { NavController, NavParams } from 'ionic-angular';
 
 /**?TypeScript Feature add meta data to typescript code*/
 @Component({
@@ -8,8 +9,19 @@ import { HomePage } from '../home/home';
   templateUrl: 'profile.html'
 })
 export class ProfilePage {
-    /**How we can inject pieces of reusable code into  */
-  constructor(public navCtrl: NavController) {
+  /**How we can inject pieces of reusable code into  */
+  public username: string;
+  public password: string;
+  public passwordverify: string;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+  }
+
+  ionViewDidLoad() {
+    this.username = this.navParams.get("username");
+    this.password = this.navParams.get("password");
+    this.passwordverify = this.navParams.get("passwordverify");
   }
 
   popToRoot(){
@@ -17,5 +29,10 @@ export class ProfilePage {
     this.navCtrl.setRoot(HomePage);
     this.navCtrl.popToRoot();
   }
+
+  viewCharities(){
+    /**pushes a new page into stack*/
+    this.navCtrl.push(CharityPage);
+}
 
 }
