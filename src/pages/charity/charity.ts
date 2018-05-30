@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CharityprofilePage } from '../charityprofile/charityprofile';
 
 /**
  * Generated class for the CharityPage page.
@@ -15,14 +16,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CharityPage {
 
-  charities: any; 
+  charities: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.charities = [
-      'Breadline Africa',
-      'Message South Africa', 
-      'Help the Rural Child', 
-      'CHOSA South Africa'
+      {name: "Rhino", description: "Testing"},
+
+      // 'Breadline Africa',
+      // 'Message South Africa',
+      // 'Help the Rural Child',
+      // 'CHOSA South Africa'
     ]
   }
 
@@ -30,9 +33,13 @@ export class CharityPage {
     console.log('ionViewDidLoad CharityPage');
   }
 
-  viewCharities(){
+  viewCharities(charity) {
     /**pushes a new page into stack*/
-    this.navCtrl.push(CharityPage);
-}
+    this.navCtrl.push(CharityprofilePage, {
+      charity: charity
+    });
+  }
+
+
 
 }

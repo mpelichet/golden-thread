@@ -33,6 +33,6 @@ export class ProfilePage {
   viewCharities(){
     /**pushes a new page into stack*/
     this.navCtrl.push(CharityPage);
-}
+  }
 
 }

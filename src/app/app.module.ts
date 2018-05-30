@@ -10,6 +10,7 @@ import { LoginPage } from '../pages/login/login';
 import { RegisterPage } from '../pages/registration/registration';
 import { ProfilePage } from '../pages/profile/profile';
 import { CharityPage } from '../pages/charity/charity';
+import { CharityprofilePage } from '../pages/charityprofile/charityprofile';
 /**?if you type in ng module first, visual studio generates the import
  * statement for you 
  */
@@ -21,6 +22,7 @@ import { CharityPage } from '../pages/charity/charity';
     RegisterPage,
     ProfilePage, 
     CharityPage,
+    CharityprofilePage
   ],
   imports: [
     BrowserModule,
@@ -33,7 +35,8 @@ import { CharityPage } from '../pages/charity/charity';
     LoginPage,
     RegisterPage, 
     ProfilePage,
-    CharityPage
+    CharityPage, 
+    CharityprofilePage
   ],
   providers: [
     StatusBar,
