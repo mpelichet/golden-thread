@@ -1,0 +1,28 @@
+<!--
+  Generated template for the CharityprofilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>charityprofile</ion-title>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  
+  <p>Charity Name: {{charity.name}}</p>
+  <p>Charity Description: {{charity.description}}</p>
+  <p>Charity Website: <a href="{{charity.url}}">Website</a></p> 
+  <p>Charity Image:<img src="{{charity.image}}"></p>
+  <p>Charity Donation Goal: {{charity.donationgoal}}</p>
+  <!-- on click of the submit button, create a function that adds to the money
+donated-->
+  <button ion-button (click)="presentPayment()" >Donate Now</button>
+
+</ion-content>
