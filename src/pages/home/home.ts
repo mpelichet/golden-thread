@@ -9,6 +9,8 @@ import { RegisterPage } from '../registration/registration';
   selector: 'page-home',
   templateUrl: 'home.html'
 })
+
+/*setRoot to nav pages*/
 export class HomePage {
     /**How we can inject pieces of reusable code into  */
   constructor(public navCtrl: NavController, public navParams: NavParams) {
