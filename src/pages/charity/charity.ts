@@ -28,7 +28,25 @@ export class CharityPage {
     charity1.image = "https://i.pinimg.com/originals/21/a7/63/21a763d382d95e9eb89f5fb7381e4b06.jpg"; 
     charity1.donationgoal = 5000; 
 
+    var charity2 = new Charity();
+    charity2.id = 2;
+    charity2.name = "Dog Poaching";
+    charity2.description = "Save the Dogs!";
+    charity2.url = "http://www" ;
+    charity2.image = "https://"; 
+    charity2.donationgoal = 5000; 
+
+    var charity3 = new Charity();
+    charity3.id = 3;
+    charity3.name = "Ostrich Poaching";
+    charity3.description = "Save the Ostrichs!";
+    charity3.url = "http://www" ;
+    charity3.image = "https://"; 
+    charity3.donationgoal = 5000; 
+
     this.charities.push(charity1); 
+    this.charities.push(charity2); 
+    this.charities.push(charity3); 
 
   }
 
@@ -43,6 +61,7 @@ export class CharityPage {
     });
   }
 
+ 
 
 
 }

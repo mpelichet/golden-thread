@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController, ModalController } from 'ionic-angular';
+import { Charity } from '../../models/charity';
+
 
 /**
  * Generated class for the PaymentPage page.
@@ -27,6 +29,12 @@ export class PaymentPage {
     let data = { 'foo': 'bar' };
     this.viewCtrl.dismiss(data);
   }
+
+  /*addToProfile(charity){
+    this.navCtrl.push(Portfolio, {
+      charity: charity
+    });
+  }*/
  
 
 }

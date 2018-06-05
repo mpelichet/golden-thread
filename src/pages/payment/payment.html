@@ -7,17 +7,52 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>payment</ion-title>
-    
-    <ion-buttons end> 
+    <ion-title>Payment Info</ion-title>
+
+    <ion-buttons end>
       <button ion-button clear (click)="dismiss()">Cancel</button>
-    </ion-buttons>  
-    
+    </ion-buttons>
+
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+  <ion-list radio-group>
+    <ion-list-header>Payment Type</ion-list-header>
 
+    <ion-item>
+      <ion-label>Reoccuring</ion-label>
+      <ion-radio checked="false" value="reoccuring"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>One-Time</ion-label>
+      <ion-radio checked="false" value="one-time"></ion-radio>
+    </ion-item>
+
+    <br/>
+
+    <ion-list-header>Card Info</ion-list-header>
+
+
+    <ion-item>
+      <ion-label color="primary" stacked>Card Number</ion-label>
+      <ion-input type="email" placeholder="**** **** ****"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label color="primary" stacked>Expiration Date</ion-label>
+      <ion-datetime placeholder =" MM YYYY"displayFormat="MM YYYY" pickerFormat="MM YYYY" ></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+        <ion-label color="primary" stacked>Security Code</ion-label>
+        <ion-input type="email" placeholder="***"></ion-input>
+    </ion-item>
+
+    <button ion-button (click)="addToProfile(charity)">Submit</button>
+
+  </ion-list>
 </ion-content>

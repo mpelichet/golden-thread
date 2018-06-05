@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CharityprofilePage } from '../charityprofile/charityprofile'
 
 /**
  * Generated class for the PortfolioPage page.

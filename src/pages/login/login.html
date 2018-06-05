@@ -7,10 +7,10 @@
 </ion-header>
 
 <ion-content padding>
-    <ion-list>
+    <ion-list inset>
 
         <ion-item>
-          <ion-label stacked >Username </ion-label>
+          <ion-label stacked> Username </ion-label>
           <ion-input type="text" [(ngModel)]="username"></ion-input>
         </ion-item>
       
@@ -20,5 +20,5 @@
         </ion-item>
 
     </ion-list>
-    <button ion-button (click)="login()">Enter</button>
+    <button ion-button>Enter</button>
 </ion-content>

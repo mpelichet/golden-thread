@@ -1,3 +1,5 @@
+import { Charity } from '../models/charity';
+
 export class User {
     id: number;
     firstname: string;
@@ -5,4 +7,6 @@ export class User {
     email: string;
     password: string;
     moneydonated: number;
+    charities: Array<Charity>;
+
 }

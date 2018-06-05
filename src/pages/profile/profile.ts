@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HomePage } from '../home/home';
 import { CharityPage } from '../charity/charity';
 import { NavController, NavParams } from 'ionic-angular';
+import  {PortfolioPage } from '../portfolio/portfolio'
 
 /**?TypeScript Feature add meta data to typescript code*/
 @Component({
@@ -34,5 +35,10 @@ export class ProfilePage {
     /**pushes a new page into stack*/
     this.navCtrl.push(CharityPage);
   }
+
+  navigateToPortfolio(){
+    this.navCtrl.push(PortfolioPage);
+  }
+
 
 }

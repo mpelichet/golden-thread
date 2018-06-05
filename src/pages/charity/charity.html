@@ -13,11 +13,13 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
     <ion-content>
  
         <ion-list>
-            <button><ion-item *ngFor="let charity of charities" (click)="viewCharities(charity)"> {{charity.name}} </ion-item></button>
+            <button ion-item *ngFor="let charity of charities" (click)="viewCharities(charity)"> 
+              {{charity.name}} 
+            </button>
         </ion-list>
      
     </ion-content>

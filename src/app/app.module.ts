@@ -26,7 +26,7 @@ import { PortfolioPage } from '../pages/portfolio/portfolio';
     CharityPage,
     CharityprofilePage,
     PaymentPage, 
-    PortfolioPage  
+    PortfolioPage, 
   ],
   imports: [
     BrowserModule,
